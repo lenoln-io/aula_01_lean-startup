@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lean Startup - Inovação Social e Empreendedorismo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="progress-bar">
+      <div class="progress-fill" id="progressBar"></div>
+    </div>
+    <div class="container">
+      <!-- Slide 1: Introdução -->
+      <div class="slide intro-section">
+        <h1>🚀 LEAN STARTUP</h1>
+        <div style="text-align: center; margin: 30px 0">
+          <p style="font-size: 1.4em; color: #15803d; font-weight: bold">
+            Transformando Ideias em Soluções de Impacto Social
+          </p>
+          <p style="font-size: 1.1em; margin-top: 20px; color: #374151">
+            Curso Técnico de Informática - 1º Ano<br />
+            Inovação Social e Científica e Empreendedorismo
+          </p>
+        </div>
+      </div>
+
+      <!-- Slide 2: O que é Lean Startup -->
+      <div class="slide">
+        <h2>🎯 O que é Lean Startup?</h2>
+
+        <div
+          style="
+            background: linear-gradient(135deg, #f0fdf4, #ecfdf5);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 20px 0;
+          "
+        >
+          <p style="font-size: 1.2em; line-height: 1.8; color: #374151">
+            A <span class="highlight">Lean Startup</span> é uma metodologia
+            revolucionária criada por <strong>Eric Ries</strong> que combina
+            conceitos de <em>lean manufacturing</em> (eliminação de
+            desperdícios) com <em>desenvolvimento ágil</em> para criar produtos
+            e serviços que realmente atendam às necessidades dos clientes.
+          </p>
+        </div>
+
+        <div class="concept-grid">
+          <div
+            class="concept-card interactive-element"
+            onclick="_explainConcept('efficiency')"
+          >
+            <h3>⚡ Eficiência</h3>
+            <p>
+              Usar o mínimo de recursos e tempo possível para validar ideias
+            </p>
+          </div>
+
+          <div
+            class="concept-card interactive-element"
+            onclick="_explainConcept('learning')"
+          >
+            <h3>📚 Aprendizado Contínuo</h3>
+            <p>Aprender rapidamente com feedbacks reais do mercado</p>
+          </div>
+
+          <div
+            class="concept-card interactive-element"
+            onclick="_explainConcept('risk')"
+          >
+            <h3>🛡️ Redução de Riscos</h3>
+            <p>Minimizar investimentos antes de validar a demanda</p>
+          </div>
+        </div>
+
+        <div
+          id="conceptExplanation"
+          style="
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            min-height: 60px;
+            border-left: 4px solid #22c55e;
+          "
+        >
+          <p style="color: #6b7280; font-style: italic">
+            Clique em cada conceito acima para saber mais!
+          </p>
+        </div>
+      </div>
+
+      <!-- Slide 3: Ciclo Build-Measure-Learn -->
+      <div class="slide">
+        <h2>🔄 Ciclo BML (Build-Measure-Learn)</h2>
+        <p
+          style="
+            text-align: center;
+            font-size: 1.1em;
+            margin-bottom: 30px;
+            color: #6b7280;
+          "
+        >
+          O coração da metodologia Lean Startup
+        </p>
+
+        <div class="cycle-container">
+          <div
+            class="cycle-step interactive-element"
+            onclick="_explainStep('build')"
+          >
+            <div>🔨</div>
+            <div>BUILD</div>
+            <div style="font-size: 0.8em">Construir</div>
+          </div>
+
+          <div class="arrow">→</div>
+
+          <div
+            class="cycle-step interactive-element"
+            onclick="_explainStep('measure')"
+          >
+            <div>📊</div>
+            <div>MEASURE</div>
+            <div style="font-size: 0.8em">Medir</div>
+          </div>
+
+          <div class="arrow">→</div>
+
+          <div
+            class="cycle-step interactive-element"
+            onclick="_explainStep('learn')"
+          >
+            <div>🧠</div>
+            <div>LEARN</div>
+            <div style="font-size: 0.8em">Aprender</div>
+          </div>
+        </div>
+
+        <div
+          id="stepExplanation"
+          style="
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            min-height: 60px;
+            border-left: 4px solid #22c55e;
+          "
+        >
+          <p style="color: #6b7280; font-style: italic">
+            Clique em cada etapa do ciclo para saber mais!
+          </p>
+        </div>
+      </div>
+
+      <!-- Slide 4: Conceitos-Chave -->
+      <div class="slide">
+        <h2>🔑 Conceitos-Chave</h2>
+
+        <div class="concept-grid">
+          <div class="concept-card">
+            <h3>📱 MVP - Produto Mínimo Viável</h3>
+            <p>
+              Versão simplificada do produto com apenas as funcionalidades
+              essenciais para testar a proposta de valor com os primeiros
+              clientes.
+            </p>
+            <div
+              style="
+                margin-top: 15px;
+                padding: 10px;
+                background: #fef3c7;
+                border-radius: 8px;
+              "
+            >
+              <strong>Exemplo:</strong> Um aplicativo com apenas a função
+              principal, sem recursos extras.
+            </div>
+          </div>
+
+          <div class="concept-card">
+            <h3>🔄 Pivô (Pivot)</h3>
+            <p>
+              Mudança estratégica no modelo de negócios, produto ou público-alvo
+              baseada no feedback e dados coletados.
+            </p>
+            <div
+              style="
+                margin-top: 15px;
+                padding: 10px;
+                background: #ddd6fe;
+                border-radius: 8px;
+              "
+            >
+              <strong>Exemplo:</strong> Mudar de um app de jogos para um app
+              educativo baseado no feedback dos usuários.
+            </div>
+          </div>
+
+          <div class="concept-card">
+            <h3>✅ Validação de Hipóteses</h3>
+            <p>
+              Processo de testar suposições sobre o mercado, clientes e produto
+              antes de investir recursos significativos.
+            </p>
+            <div
+              style="
+                margin-top: 15px;
+                padding: 10px;
+                background: #fecaca;
+                border-radius: 8px;
+              "
+            >
+              <strong>Exemplo:</strong> Testar se pessoas realmente pagariam
+              pelo seu produto antes de desenvolvê-lo completamente.
+            </div>
+          </div>
+
+          <div class="concept-card">
+            <h3>👥 Desenvolvimento de Clientes</h3>
+            <p>
+              Colocar o cliente no centro do processo de desenvolvimento,
+              validando ideias diretamente com potenciais usuários.
+            </p>
+            <div
+              style="
+                margin-top: 15px;
+                padding: 10px;
+                background: #c7f9cc;
+                border-radius: 8px;
+              "
+            >
+              <strong>Exemplo:</strong> Fazer entrevistas com usuários antes de
+              decidir quais funcionalidades incluir.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 5: Exemplos de Sucesso -->
+      <div class="slide examples-section">
+        <h2>🌟 Casos de Sucesso</h2>
+
+        <div class="example-card">
+          <h3>📦 Dropbox</h3>
+          <p>
+            <strong>MVP:</strong> Um vídeo simples explicando como o produto
+            funcionaria
+          </p>
+          <p>
+            <strong>Aprendizado:</strong> Validou a demanda antes de desenvolver
+            o produto completo
+          </p>
+          <p>
+            <strong>Resultado:</strong> Economizou milhões em desenvolvimento
+            desnecessário
+          </p>
+        </div>
+
+        <div class="example-card">
+          <h3>👟 Zappos</h3>
+          <p>
+            <strong>MVP:</strong> Comprava sapatos de lojas locais e enviava
+            para clientes online
+          </p>
+          <p>
+            <strong>Aprendizado:</strong> Confirmou que pessoas comprariam
+            sapatos online
+          </p>
+          <p>
+            <strong>Resultado:</strong> Construiu um império de e-commerce de
+            calçados
+          </p>
+        </div>
+
+        <div class="example-card">
+          <h3>🏠 Airbnb</h3>
+          <p><strong>MVP:</strong> Alugaram um espaço da própria casa</p>
+          <p>
+            <strong>Aprendizado:</strong> Pessoas queriam acomodações
+            alternativas
+          </p>
+          <p>
+            <strong>Resultado:</strong> Criou uma plataforma global de
+            hospedagem
+          </p>
+        </div>
+      </div>
+
+      <!-- Slide 7: Lean Startup Social -->
+      <div class="slide">
+        <h2>🌱 Lean Startup Social</h2>
+
+        <div
+          style="
+            background: linear-gradient(135deg, #f0fdf4, #ecfdf5);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 20px 0;
+          "
+        >
+          <p style="font-size: 1.1em; line-height: 1.8; color: #374151">
+            Quando aplicamos Lean Startup para resolver
+            <span class="highlight">problemas sociais</span>, precisamos adaptar
+            alguns conceitos para focar no <strong>impacto social</strong> além
+            do lucro.
+          </p>
+        </div>
+
+        <div class="concept-grid">
+          <div class="concept-card">
+            <h3>📈 Métricas de Impacto</h3>
+            <p>
+              Além de métricas financeiras, medimos o impacto social: quantas
+              pessoas ajudamos, problemas resolvidos, qualidade de vida
+              melhorada.
+            </p>
+          </div>
+
+          <div class="concept-card">
+            <h3>🤝 Validação Comunitária</h3>
+            <p>
+              Trabalhamos diretamente com as comunidades beneficiárias para
+              entender suas reais necessidades e validar nossas soluções.
+            </p>
+          </div>
+
+          <div class="concept-card">
+            <h3>💰 Sustentabilidade</h3>
+            <p>
+              Encontramos formas de manter o projeto funcionando a longo prazo,
+              seja através de parcerias, doações ou modelos híbridos.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 6: Quiz Interativo -->
+      <div class="slide interactive-quiz">
+        <h2>🧠 Quiz Interativo</h2>
+        <p style="margin-bottom: 20px">Teste seus conhecimentos!</p>
+
+        <div class="quiz-question">
+          <h3>
+            Questão 1: Metodologia que combina conceitos de lean manufacturing e
+            desenvolvimento ágil para criar produtos e serviços de forma
+            eficiente
+          </h3>
+          <div class="quiz-options">
+            <div class="quiz-option" onclick="_checkAnswer(this, true)">
+              a) Lean Startup
+            </div>
+            <div class="quiz-option" onclick="_checkAnswer(this, false)">
+              b) Design Thinking
+            </div>
+            <div class="quiz-option" onclick="_checkAnswer(this, false)">
+              c) Análise SWOT
+            </div>
+            <div class="quiz-option" onclick="_checkAnswer(this, false)">
+              d) Business Model Canvas
+            </div>
+            <div class="quiz-option" onclick="_checkAnswer(this, false)">
+              e) Growth Hacking
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-question">
+          <h3>
+            Questão 2: Ciclo central da Lean Startup que envolve desenvolver um
+            produto, testar no mercado, medir os resultados e aprender com o
+            feedback
+          </h3>
+          <div class="quiz-options">
+            <div class="quiz-option" onclick="_checkAnswer(this, false)">
+              a) Produto Mínimo Viável
+            </div>
+            <div class="quiz-option" onclick="_checkAnswer(this, false)">
+              b) Pivô
+            </div>
+            <div class="quiz-option" onclick="_checkAnswer(this, true)">
+              c) Construir-Medir-Aprender
+            </div>
+            <div class="quiz-option" onclick="_checkAnswer(this, false)">
+              d) Desenvolvimento de Clientes
+            </div>
+            <div class="quiz-option" onclick="_checkAnswer(this, false)">
+              e) Iteração Contínua
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-question">
+          <h3>
+            Questão 3: Versão simplificada de um produto que contém apenas as
+            funcionalidades essenciais para testar a proposta de valor com os
+            primeiros clientes
+          </h3>
+          <div class="quiz-options">
+            <div class="quiz-option" onclick="_checkAnswer(this, false)">
+              a) Produto Final
+            </div>
+            <div class="quiz-option" onclick="_checkAnswer(this, false)">
+              b) Proposta de Valor
+            </div>
+            <div class="quiz-option" onclick="_checkAnswer(this, true)">
+              c) Produto Mínimo Viável (MVP)
+            </div>
+            <div class="quiz-option" onclick="_checkAnswer(this, false)">
+              d) Produto Beta
+            </div>
+            <div class="quiz-option" onclick="_checkAnswer(this, false)">
+              e) Protótipo
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-question">
+          <h3>
+            Questão 4: Mudança estratégica no modelo de negócios, produto ou
+            público-alvo com base no feedback e nos dados coletados durante os
+            testes
+          </h3>
+          <div class="quiz-options">
+            <div class="quiz-option" onclick="_checkAnswer(this, false)">
+              a) Expansão de Mercado
+            </div>
+            <div class="quiz-option" onclick="_checkAnswer(this, true)">
+              b) Pivô
+            </div>
+            <div class="quiz-option" onclick="_checkAnswer(this, false)">
+              c) Crescimento Escalonado
+            </div>
+            <div class="quiz-option" onclick="_checkAnswer(this, false)">
+              d) Construção-Medir-Aprender
+            </div>
+            <div class="quiz-option" onclick="_checkAnswer(this, false)">
+              e) Desenvolvimento de Produto
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-question">
+          <h3>
+            Questão 5: Etapa inicial da Lean Startup que envolve a formulação de
+            hipóteses sobre o problema, o mercado-alvo e a proposta de valor
+          </h3>
+          <div class="quiz-options">
+            <div class="quiz-option" onclick="_checkAnswer(this, true)">
+              a) Ideação e Hipóteses
+            </div>
+            <div class="quiz-option" onclick="_checkAnswer(this, false)">
+              b) Teste de Mercado
+            </div>
+            <div class="quiz-option" onclick="_checkAnswer(this, false)">
+              c) Criação do MVP
+            </div>
+            <div class="quiz-option" onclick="_checkAnswer(this, false)">
+              d) Análise SWOT
+            </div>
+            <div class="quiz-option" onclick="_checkAnswer(this, false)">
+              e) Desenvolvimento de Produto
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-question">
+          <h3>
+            Questão 6: Benefício da Lean Startup que envolve a identificação
+            precoce de falhas no modelo de negócios antes de grandes
+            investimentos
+          </h3>
+          <div class="quiz-options">
+            <div class="quiz-option" onclick="_checkAnswer(this, true)">
+              a) Redução de Riscos
+            </div>
+            <div class="quiz-option" onclick="_checkAnswer(this, false)">
+              b) Crescimento Acelerado
+            </div>
+            <div class="quiz-option" onclick="_checkAnswer(this, false)">
+              c) Aumento de Vendas
+            </div>
+            <div class="quiz-option" onclick="_checkAnswer(this, false)">
+              d) Melhoria da Eficiência Operacional
+            </div>
+            <div class="quiz-option" onclick="_checkAnswer(this, false)">
+              e) Escala Global
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-question">
+          <h3>
+            Questão 7: Fase em que a startup testa o MVP no mercado e coleta
+            feedback dos primeiros clientes
+          </h3>
+          <div class="quiz-options">
+            <div class="quiz-option" onclick="_checkAnswer(this, false)">
+              a) Criação do MVP
+            </div>
+            <div class="quiz-option" onclick="_checkAnswer(this, true)">
+              b) Teste de Mercado e Coleta de Feedback
+            </div>
+            <div class="quiz-option" onclick="_checkAnswer(this, false)">
+              c) Análise e Aprendizado
+            </div>
+            <div class="quiz-option" onclick="_checkAnswer(this, false)">
+              d) Desenvolvimento de Produto
+            </div>
+            <div class="quiz-option" onclick="_checkAnswer(this, false)">
+              e) Expansão de Mercado
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-question">
+          <h3>
+            Questão 8: Exemplo de uma empresa que validou sua ideia com um MVP
+            simples antes de investir em desenvolvimento completo
+          </h3>
+          <div class="quiz-options">
+            <div class="quiz-option" onclick="_checkAnswer(this, false)">
+              a) Airbnb
+            </div>
+            <div class="quiz-option" onclick="_checkAnswer(this, false)">
+              b) Uber
+            </div>
+            <div class="quiz-option" onclick="_checkAnswer(this, true)">
+              c) Dropbox
+            </div>
+            <div class="quiz-option" onclick="_checkAnswer(this, false)">
+              d) Amazon
+            </div>
+            <div class="quiz-option" onclick="_checkAnswer(this, false)">
+              e) Facebook
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-question">
+          <h3>
+            Questão 9: Objetivo principal de usar um Produto Mínimo Viável (MVP)
+            na Lean Startup
+          </h3>
+          <div class="quiz-options">
+            <div class="quiz-option" onclick="_checkAnswer(this, true)">
+              a) Minimizar os riscos e desperdícios ao validar hipóteses com o
+              mínimo de esforço e investimento
+            </div>
+            <div class="quiz-option" onclick="_checkAnswer(this, false)">
+              b) Testar todos os recursos do produto final antes do lançamento
+            </div>
+            <div class="quiz-option" onclick="_checkAnswer(this, false)">
+              c) Aumentar a base de clientes rapidamente
+            </div>
+            <div class="quiz-option" onclick="_checkAnswer(this, false)">
+              d) Maximizar os lucros iniciais
+            </div>
+            <div class="quiz-option" onclick="_checkAnswer(this, false)">
+              e) Criar um produto totalmente acabado antes de colocá-lo no
+              mercado
+            </div>
+          </div>
+        </div>
+
+        <div class="quiz-question">
+          <h3>
+            Questão 10: Processo de tomar decisões baseadas em dados e feedbacks
+            do mercado para ajustar o produto ou modelo de negócios
+          </h3>
+          <div class="quiz-options">
+            <div class="quiz-option" onclick="_checkAnswer(this, false)">
+              a) Pivô
+            </div>
+            <div class="quiz-option" onclick="_checkAnswer(this, false)">
+              b) Expansão de Mercado
+            </div>
+            <div class="quiz-option" onclick="_checkAnswer(this, true)">
+              c) Construir-Medir-Aprender
+            </div>
+            <div class="quiz-option" onclick="_checkAnswer(this, false)">
+              d) Análise SWOT
+            </div>
+            <div class="quiz-option" onclick="_checkAnswer(this, false)">
+              e) Desenvolvimento de Produto
+            </div>
+          </div>
+        </div>
+
+        <button class="btn" onclick="_resetQuiz()">🔄 Reiniciar Quiz</button>
+      </div>
+
+      <!-- Slide 8: Projeto TechSocial -->
+      <div class="slide">
+        <h2>🚀 Projeto TechSocial</h2>
+
+        <div style="text-align: center; margin: 30px 0">
+          <p style="font-size: 1.3em; color: #15803d; font-weight: bold">
+            Desenvolvendo Soluções Tecnológicas para Problemas Sociais
+          </p>
+          <p style="font-size: 1em; margin-top: 10px; color: #6b7280">
+            Projeto de 5 meses aplicando Lean Startup Social
+          </p>
+        </div>
+
+        <div class="concept-grid">
+          <div class="concept-card">
+            <h3>🎯 Objetivo</h3>
+            <p>
+              Identificar um problema social real da sua comunidade e
+              desenvolver uma solução tecnológica usando metodologia Lean
+              Startup.
+            </p>
+          </div>
+
+          <div class="concept-card">
+            <h3>👥 Equipes</h3>
+            <p>
+              Grupos de 4-5 alunos com papéis definidos: Product Owner, Scrum
+              Master, Desenvolvedores e Designer.
+            </p>
+          </div>
+
+          <div class="concept-card">
+            <h3>📅 Cronograma</h3>
+            <p>
+              5 meses de desenvolvimento com entregas quinzenais e apresentação
+              final para a comunidade.
+            </p>
+          </div>
+
+          <div class="concept-card">
+            <h3>🏆 Produtos</h3>
+            <p>
+              MVP funcional, plano de negócios social, métricas de impacto e
+              apresentação para investidores sociais.
+            </p>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin: 30px 0">
+          <button class="btn" onclick="showProjectPhases()">
+            📋 Ver Fases do Projeto
+          </button>
+        </div>
+      </div>
+
+      <!-- Slide 9: Atividade Prática -->
+      <div class="slide">
+        <h2>🎯 Atividade Prática</h2>
+
+        <div
+          style="
+            background: linear-gradient(135deg, #fef3c7, #fcd34d);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 20px 0;
+          "
+        >
+          <h3 style="color: #92400e">
+            Brainstorming: Problemas Sociais da Nossa Comunidade
+          </h3>
+          <p style="color: #92400e; margin: 10px 0">
+            Em equipes, identifiquem 10 problemas sociais que vocês observam na
+            sua comunidade.
+          </p>
+        </div>
+
+        <div class="concept-grid">
+          <div class="concept-card">
+            <h3>🏥 Saúde</h3>
+            <p>
+              Acesso a serviços de saúde, prevenção, informação médica, saúde
+              mental...
+            </p>
+          </div>
+
+          <div class="concept-card">
+            <h3>📚 Educação</h3>
+            <p>
+              Acesso à educação, evasão escolar, alfabetização digital, educação
+              inclusiva...
+            </p>
+          </div>
+
+          <div class="concept-card">
+            <h3>🌍 Meio Ambiente</h3>
+            <p>
+              Poluição, reciclagem, consciência ambiental, sustentabilidade...
+            </p>
+          </div>
+
+          <div class="concept-card">
+            <h3>🤝 Inclusão Social</h3>
+            <p>
+              Acessibilidade, diversidade, igualdade de oportunidades, combate
+              ao preconceito...
+            </p>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin: 30px 0">
+          <button class="btn" onclick="startBrainstorming()">
+            💡 Iniciar Brainstorming
+          </button>
+        </div>
+      </div>
+
+      <!-- Slide 10: Próximos Passos -->
+      <div class="slide">
+        <h2>🎯 Próximos Passos</h2>
+
+        <div
+          style="
+            background: linear-gradient(135deg, #f0fdf4, #ecfdf5);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 20px 0;
+          "
+        >
+          <h3 style="color: #15803d">Para a próxima semana:</h3>
+          <ul style="margin: 15px 0; color: #374151; line-height: 1.8">
+            <li>
+              📋 Cada equipe deve pesquisar e trazer 3 exemplos específicos de
+              problemas sociais da comunidade
+            </li>
+            <li>
+              📊 Incluir dados e evidências sobre os problemas identificados
+            </li>
+            <li>
+              📖 Leitura complementar: "Gestão Financeira em Organizações
+              Sociais"
+            </li>
+            <li>🧮 Trazer calculadora para atividades práticas</li>
+          </ul>
+        </div>
+
+        <div class="concept-grid">
+          <div class="concept-card">
+            <h3>🔍 Pesquisa</h3>
+            <p>
+              Investiguem problemas reais com dados concretos e fontes
+              confiáveis.
+            </p>
+          </div>
+
+          <div class="concept-card">
+            <h3>💡 Criatividade</h3>
+            <p>
+              Pensem em soluções inovadoras que podem ser desenvolvidas com
+              tecnologia.
+            </p>
+          </div>
+
+          <div class="concept-card">
+            <h3>🎯 Foco</h3>
+            <p>
+              Escolham problemas que vocês realmente se importam em resolver.
+            </p>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin: 30px 0">
+          <button class="btn" onclick="showResources()">
+            📚 Recursos Adicionais
+          </button>
+          <button class="btn" onclick="_goToActivities()">
+            📧 Ir para as atividades
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="floating-icon" onclick="_scrollToTop()" title="Voltar ao topo">
+      ↑
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

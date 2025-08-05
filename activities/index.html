@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividades Práticas - Lean Startup Social</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>🎯 Atividades Práticas</h1>
+        <p style="font-size: 1.2em; color: #6b7280">
+          Lean Startup Social - Projeto TechSocial
+        </p>
+        <p style="margin-top: 10px; color: #9ca3af">
+          Transformando teoria em prática com atividades interativas
+        </p>
+      </div>
+
+      <!-- Atividade 1: Mapa Mental -->
+      <div class="activity-section">
+        <div class="activity-title">
+          🧠 Atividade 1: Mapa Mental Lean Startup
+        </div>
+
+        <div class="timer-box">⏰ Tempo: 20 minutos</div>
+
+        <div class="activity-grid">
+          <div class="activity-card">
+            <h3>🎯 Objetivo</h3>
+            <p>
+              Consolidar os conceitos aprendidos através de uma representação
+              visual organizada dos principais elementos da metodologia Lean
+              Startup.
+            </p>
+          </div>
+
+          <div class="activity-card">
+            <h3>👥 Formato</h3>
+            <p>
+              Duplas de alunos trabalhando colaborativamente para criar um mapa
+              mental completo e criativo.
+            </p>
+          </div>
+        </div>
+
+        <div class="materials-needed">
+          <h4>📦 Materiais Necessários:</h4>
+          <ul>
+            <li>Papel A3 ou flipchart</li>
+            <li>Canetas coloridas e marcadores</li>
+            <li>Post-its coloridos</li>
+            <li>Régua (opcional)</li>
+          </ul>
+        </div>
+
+        <div class="step-list">
+          <div class="step-item">
+            <strong>Passo 1 (5min):</strong> Coloquem "LEAN STARTUP" no centro
+            da folha
+          </div>
+          <div class="step-item">
+            <strong>Passo 2 (10min):</strong> Criem ramificações principais:
+            Princípios, Ciclo BML, Conceitos-chave, Benefícios
+          </div>
+          <div class="step-item">
+            <strong>Passo 3 (3min):</strong> Adicionem sub-ramificações com
+            detalhes específicos
+          </div>
+          <div class="step-item">
+            <strong>Passo 4 (2min):</strong> Usem cores, símbolos e desenhos
+            para tornar visual
+          </div>
+        </div>
+
+        <div class="evaluation-criteria">
+          <h4>📊 Critérios de Avaliação:</h4>
+          <ul>
+            <li>
+              <strong>Completude (40%):</strong> Incluiu todos os conceitos
+              principais?
+            </li>
+            <li>
+              <strong>Organização (30%):</strong> Estrutura lógica e clara?
+            </li>
+            <li>
+              <strong>Criatividade (20%):</strong> Uso de cores, símbolos e
+              design?
+            </li>
+            <li>
+              <strong>Colaboração (10%):</strong> Trabalho efetivo em dupla?
+            </li>
+          </ul>
+        </div>
+
+        <button class="btn" onclick="startTimer(20, 'mindmap')">
+          ⏰ Iniciar Cronômetro
+        </button>
+        <button class="btn btn-secondary" onclick="showMindMapExample()">
+          💡 Ver Exemplo
+        </button>
+      </div>
+
+      <!-- Atividade 2: Análise de Caso -->
+      <div class="activity-section">
+        <div class="activity-title">
+          🔍 Atividade 2: Análise de Startup Social
+        </div>
+
+        <div class="timer-box">
+          ⏰ Tempo: 25 minutos (20min análise + 5min apresentação)
+        </div>
+
+        <div class="activity-grid">
+          <div class="activity-card" onclick="selectCase('gerando-falcoes')">
+            <h3>🏠 Gerando Falcões</h3>
+            <p>
+              Organização que transforma realidades nas favelas através de
+              educação, trabalho, cultura e cidadania.
+            </p>
+            <div
+              id="case-gerando"
+              style="
+                display: none;
+                margin-top: 15px;
+                padding: 15px;
+                background: #f0fdf4;
+                border-radius: 8px;
+              "
+            >
+              <strong>Foco:</strong> Desenvolvimento de lideranças comunitárias
+              e inclusão social
+            </div>
+          </div>
+
+          <div class="activity-card" onclick="selectCase('artemisia')">
+            <h3>🚀 Artemisia</h3>
+            <p>
+              Primeira organização no Brasil dedicada ao fomento de negócios de
+              impacto social.
+            </p>
+            <div
+              id="case-artemisia"
+              style="
+                display: none;
+                margin-top: 15px;
+                padding: 15px;
+                background: #f0fdf4;
+                border-radius: 8px;
+              "
+            >
+              <strong>Foco:</strong> Aceleração e investimento em negócios de
+              impacto
+            </div>
+          </div>
+
+          <div class="activity-card" onclick="selectCase('bela-gil')">
+            <h3>🌱 Bela Gil</h3>
+            <p>
+              Plataforma de sustentabilidade e alimentação consciente com
+              impacto social e ambiental.
+            </p>
+            <div
+              id="case-bela"
+              style="
+                display: none;
+                margin-top: 15px;
+                padding: 15px;
+                background: #f0fdf4;
+                border-radius: 8px;
+              "
+            >
+              <strong>Foco:</strong> Educação alimentar e sustentabilidade
+            </div>
+          </div>
+        </div>
+
+        <div class="step-list">
+          <div class="step-item">
+            <strong>Passo 1 (5min):</strong> Escolham uma startup e pesquisem
+            informações básicas
+          </div>
+          <div class="step-item">
+            <strong>Passo 2 (10min):</strong> Identifiquem como aplicaram
+            Build-Measure-Learn
+          </div>
+          <div class="step-item">
+            <strong>Passo 3 (5min):</strong> Analisem o MVP inicial e as
+            iterações
+          </div>
+          <div class="step-item">
+            <strong>Passo 4 (5min):</strong> Preparem apresentação de 3 minutos
+          </div>
+        </div>
+
+        <div class="canvas-area" id="analysisCanvas">
+          <h4 style="color: #15803d; margin-bottom: 15px">
+            📝 Canvas de Análise
+          </h4>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px">
+            <div class="canvas-section">
+              <h5>🎯 Problema Social</h5>
+              <div
+                class="editable-area"
+                contenteditable="true"
+                placeholder="Que problema social a startup resolve?"
+              ></div>
+            </div>
+            <div class="canvas-section">
+              <h5>💡 Solução Inicial (MVP)</h5>
+              <div
+                class="editable-area"
+                contenteditable="true"
+                placeholder="Como começaram? Qual foi o MVP?"
+              ></div>
+            </div>
+            <div class="canvas-section">
+              <h5>📊 Como Mediram</h5>
+              <div
+                class="editable-area"
+                contenteditable="true"
+                placeholder="Que métricas usaram?"
+              ></div>
+            </div>
+            <div class="canvas-section">
+              <h5>🧠 O que Aprenderam</h5>
+              <div
+                class="editable-area"
+                contenteditable="true"
+                placeholder="Quais ajustes fizeram?"
+              ></div>
+            </div>
+          </div>
+        </div>
+
+        <button class="btn" onclick="startTimer(25, 'analysis')">
+          ⏰ Iniciar Análise
+        </button>
+        <button class="btn btn-secondary" onclick="generateAnalysisReport()">
+          📄 Gerar Relatório
+        </button>
+      </div>
+
+      <!-- Atividade 3: Brainstorming de Problemas -->
+      <div class="activity-section">
+        <div class="activity-title">
+          💡 Atividade 3: Brainstorming de Problemas Sociais
+        </div>
+
+        <div class="timer-box">⏰ Tempo: 20 minutos</div>
+
+        <div class="activity-grid">
+          <div class="activity-card">
+            <h3>🏥 Saúde</h3>
+            <p>
+              Acesso a serviços, prevenção, saúde mental, informação médica...
+            </p>
+            <button class="btn" onclick="addProblemCategory('saude')">
+              + Adicionar Problemas
+            </button>
+          </div>
+
+          <div class="activity-card">
+            <h3>📚 Educação</h3>
+            <p>
+              Evasão escolar, alfabetização digital, educação inclusiva, acesso
+              ao ensino...
+            </p>
+            <button class="btn" onclick="addProblemCategory('educacao')">
+              + Adicionar Problemas
+            </button>
+          </div>
+
+          <div class="activity-card">
+            <h3>🌍 Meio Ambiente</h3>
+            <p>
+              Poluição, reciclagem, sustentabilidade, conscientização
+              ambiental...
+            </p>
+            <button class="btn" onclick="addProblemCategory('ambiente')">
+              + Adicionar Problemas
+            </button>
+          </div>
+
+          <div class="activity-card">
+            <h3>🤝 Inclusão Social</h3>
+            <p>
+              Acessibilidade, diversidade, igualdade, combate ao preconceito...
+            </p>
+            <button class="btn" onclick="addProblemCategory('inclusao')">
+              + Adicionar Problemas
+            </button>
+          </div>
+        </div>
+
+        <div class="interactive-canvas" id="problemsCanvas">
+          <h3>🎯 Quadro de Problemas da Nossa Comunidade</h3>
+          <p>
+            Clique em uma categoria acima para começar a adicionar problemas
+          </p>
+          <div id="problemsList" style="margin-top: 20px; width: 100%"></div>
+        </div>
+
+        <div class="step-list">
+          <div class="step-item">
+            <strong>Passo 1 (5min):</strong> Cada membro da equipe pensa em
+            problemas que observa na comunidade
+          </div>
+          <div class="step-item">
+            <strong>Passo 2 (10min):</strong> Compartilhem e discutam os
+            problemas identificados
+          </div>
+          <div class="step-item">
+            <strong>Passo 3 (3min):</strong> Classifiquem por categoria (saúde,
+            educação, etc.)
+          </div>
+          <div class="step-item">
+            <strong>Passo 4 (2min):</strong> Priorizem os 3 problemas mais
+            impactantes
+          </div>
+        </div>
+
+        <button class="btn" onclick="startTimer(20, 'brainstorm')">
+          ⏰ Iniciar Brainstorming
+        </button>
+        <button class="btn btn-secondary" onclick="exportProblems()">
+          📤 Exportar Lista
+        </button>
+      </div>
+
+      <!-- Atividade 4: Formação de Equipes -->
+      <div class="activity-section">
+        <div class="activity-title">
+          👥 Atividade 4: Definição de Papéis na Equipe
+        </div>
+
+        <div class="timer-box">⏰ Tempo: 15 minutos</div>
+
+        <div class="team-roles">
+          <div class="role-card" onclick="selectRole('product-owner')">
+            <h3>🎯 Product Owner</h3>
+            <p>
+              Define a visão do produto e prioriza funcionalidades baseado nas
+              necessidades dos usuários
+            </p>
+          </div>
+
+          <div class="role-card" onclick="selectRole('scrum-master')">
+            <h3>⚡ Scrum Master</h3>
+            <p>
+              Facilita o processo, remove obstáculos e garante que a equipe siga
+              a metodologia
+            </p>
+          </div>
+
+          <div class="role-card" onclick="selectRole('developer')">
+            <h3>💻 Desenvolvedor</h3>
+            <p>
+              Responsável pela programação e implementação técnica da solução
+            </p>
+          </div>
+
+          <div class="role-card" onclick="selectRole('designer')">
+            <h3>🎨 Designer UX/UI</h3>
+            <p>Cria a experiência do usuário e interface visual do produto</p>
+          </div>
+
+          <div class="role-card" onclick="selectRole('researcher')">
+            <h3>🔍 Pesquisador Social</h3>
+            <p>Estuda o problema social e valida soluções com a comunidade</p>
+          </div>
+        </div>
+
+        <div class="canvas-area" id="teamCanvas">
+          <h4 style="color: #15803d; margin-bottom: 15px">
+            👥 Organização da Equipe
+          </h4>
+          <div id="teamMembers">
+            <p style="color: #6b7280; text-align: center">
+              Clique nos papéis acima para definir responsabilidades
+            </p>
+          </div>
+        </div>
+
+        <div class="step-list">
+          <div class="step-item">
+            <strong>Passo 1 (3min):</strong> Cada membro apresenta suas
+            habilidades e interesses
+          </div>
+          <div class="step-item">
+            <strong>Passo 2 (7min):</strong> Discutam e definam quem assumirá
+            cada papel
+          </div>
+          <div class="step-item">
+            <strong>Passo 3 (3min):</strong> Estabeleçam expectativas e
+            responsabilidades
+          </div>
+          <div class="step-item">
+            <strong>Passo 4 (2min):</strong> Criem um canal de comunicação da
+            equipe
+          </div>
+        </div>
+
+        <button class="btn" onclick="startTimer(15, 'team')">
+          ⏰ Formar Equipe
+        </button>
+        <button class="btn btn-secondary" onclick="generateTeamChart()">
+          📊 Gerar Organograma
+        </button>
+      </div>
+
+      <!-- Atividade 5: Canvas MVP Social -->
+      <div class="activity-section">
+        <div class="activity-title">🎯 Atividade 5: Canvas do MVP Social</div>
+
+        <div class="timer-box">⏰ Tempo: 30 minutos</div>
+
+        <div class="canvas-area" style="min-height: 500px">
+          <h4 style="color: #15803d; margin-bottom: 20px; text-align: center">
+            🎨 Canvas do Produto Mínimo Viável Social
+          </h4>
+
+          <div
+            style="
+              display: grid;
+              grid-template-columns: 1fr 1fr 1fr;
+              gap: 15px;
+              height: 400px;
+            "
+          >
+            <div class="canvas-section" style="background: #fef3c7">
+              <h5>👥 Beneficiários</h5>
+              <div
+                class="editable-area"
+                contenteditable="true"
+                placeholder="Quem serão os principais beneficiários da solução?"
+              ></div>
+            </div>
+
+            <div class="canvas-section" style="background: #fecaca">
+              <h5>⚡ Problema Principal</h5>
+              <div
+                class="editable-area"
+                contenteditable="true"
+                placeholder="Qual o problema social mais urgente que vamos resolver?"
+              ></div>
+            </div>
+
+            <div class="canvas-section" style="background: #c7f9cc">
+              <h5>💡 Solução Proposta</h5>
+              <div
+                class="editable-area"
+                contenteditable="true"
+                placeholder="Como nossa tecnologia vai resolver este problema?"
+              ></div>
+            </div>
+
+            <div class="canvas-section" style="background: #ddd6fe">
+              <h5>🔧 Features Mínimas</h5>
+              <div
+                class="editable-area"
+                contenteditable="true"
+                placeholder="Quais funcionalidades são essenciais no MVP?"
+              ></div>
+            </div>
+
+            <div class="canvas-section" style="background: #fed7d7">
+              <h5>📊 Como Medir Impacto</h5>
+              <div
+                class="editable-area"
+                contenteditable="true"
+                placeholder="Como vamos medir se estamos gerando impacto social?"
+              ></div>
+            </div>
+
+            <div class="canvas-section" style="background: #bee3f8">
+              <h5>💰 Sustentabilidade</h5>
+              <div
+                class="editable-area"
+                contenteditable="true"
+                placeholder="Como o projeto se manterá financeiramente?"
+              ></div>
+            </div>
+
+            <div class="canvas-section" style="background: #fbb6ce">
+              <h5>🤝 Parcerias Necessárias</h5>
+              <div
+                class="editable-area"
+                contenteditable="true"
+                placeholder="Que organizações podem nos apoiar?"
+              ></div>
+            </div>
+
+            <div class="canvas-section" style="background: #c6f6d5">
+              <h5>⚠️ Principais Riscos</h5>
+              <div
+                class="editable-area"
+                contenteditable="true"
+                placeholder="Quais são os maiores desafios que enfrentaremos?"
+              ></div>
+            </div>
+
+            <div class="canvas-section" style="background: #fed7e2">
+              <h5>🎯 Validação</h5>
+              <div
+                class="editable-area"
+                contenteditable="true"
+                placeholder="Como vamos testar se nossa ideia funciona?"
+              ></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="materials-needed">
+          <h4>💡 Dicas para o Canvas:</h4>
+          <ul>
+            <li>
+              Pensem pequeno: foquem no mínimo necessário para testar a ideia
+            </li>
+            <li>Sejam específicos: evitem soluções genéricas</li>
+            <li>
+              Considerem recursos disponíveis: tempo, conhecimento, orçamento
+            </li>
+            <li>Validem com dados: busquem evidências do problema</li>
+          </ul>
+        </div>
+
+        <button class="btn" onclick="startTimer(30, 'canvas')">
+          ⏰ Iniciar Canvas
+        </button>
+        <button class="btn btn-secondary" onclick="saveCanvas()">
+          💾 Salvar Canvas
+        </button>
+        <button class="btn btn-secondary" onclick="shareCanvas()">
+          📤 Compartilhar
+        </button>
+      </div>
+
+      <!-- Progress Tracker -->
+      <div class="progress-tracker">
+        <h3 style="color: #15803d; margin-bottom: 20px">
+          📈 Progresso das Atividades
+        </h3>
+        <div id="progressSteps">
+          <div class="progress-step current" id="step1">
+            <div class="step-number">1</div>
+            <div>
+              <strong>Mapa Mental</strong>
+              <div style="font-size: 0.9em; color: #6b7280">
+                Consolidar conceitos teóricos
+              </div>
+            </div>
+          </div>
+          <div class="progress-step" id="step2">
+            <div class="step-number">2</div>
+            <div>
+              <strong>Análise de Caso</strong>
+              <div style="font-size: 0.9em; color: #6b7280">
+                Estudar startups sociais reais
+              </div>
+            </div>
+          </div>
+          <div class="progress-step" id="step3">
+            <div class="step-number">3</div>
+            <div>
+              <strong>Brainstorming</strong>
+              <div style="font-size: 0.9em; color: #6b7280">
+                Identificar problemas locais
+              </div>
+            </div>
+          </div>
+          <div class="progress-step" id="step4">
+            <div class="step-number">4</div>
+            <div>
+              <strong>Formação de Equipes</strong>
+              <div style="font-size: 0.9em; color: #6b7280">
+                Definir papéis e responsabilidades
+              </div>
+            </div>
+          </div>
+          <div class="progress-step" id="step5">
+            <div class="step-number">5</div>
+            <div>
+              <strong>Canvas MVP</strong>
+              <div style="font-size: 0.9em; color: #6b7280">
+                Planejar produto mínimo viável
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
