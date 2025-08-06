@@ -46,7 +46,3 @@ Estudantes de cursos técnicos e interessados em inovação social, empreendedor
 ## Licença
 
 Este projeto está disponível para uso educacional e pode ser adaptado conforme necessário.
-
----
-
-Se desejar, posso criar o arquivo README.md com este conteúdo no seu projeto. Deseja que eu faça isso?
